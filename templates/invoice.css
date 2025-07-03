@@ -1,0 +1,8 @@
+body {
+  font-family: Arial;
+}
+.bill {
+  padding: 10px;
+  border: 1px dashed black;
+  width: 300px;
+}

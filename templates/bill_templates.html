@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>{{ css }}</style>
+</head>
+<body>
+  <div class="bill">
+    <h2>Tiệm Tớ Có Gu</h2>
+    <p>Mã đơn: {{ order.id }}</p>
+    <ul>
+      {% for item in order.items %}
+        <li>{{ item.name }} x {{ item.qty }} = {{ item.total }}</li>
+      {% endfor %}
+    </ul>
+    <p>Tổng cộng: {{ order.total_amount }}</p>
+    <p>Hình thức: {{ order.payment_method }}</p>
+  </div>
+</body>
+</html>
